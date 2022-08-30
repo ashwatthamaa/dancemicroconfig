@@ -33,4 +33,4 @@ management:
         include:
         - "*"
 msg:
-  dancer-microservice msg
+  dancer-microservice msg (After Refresh)
