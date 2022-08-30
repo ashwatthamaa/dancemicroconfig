@@ -26,3 +26,9 @@ logging:
       hibernate:
         type: TRACE
         SQL: DEBUG
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
