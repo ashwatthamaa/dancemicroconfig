@@ -32,3 +32,5 @@ management:
       exposure:
         include:
         - "*"
+msg:
+  dancer-microservice msg
