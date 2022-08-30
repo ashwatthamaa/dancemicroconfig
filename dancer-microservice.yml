@@ -1,0 +1,28 @@
+server:
+  port: 8992
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8999/eureka
+spring:
+  application:
+    name: dancer-microservice
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost:3306/dance
+    password: pankaj@123
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+logging:
+  level:
+    org:
+      hibernate:
+        type: TRACE
+        SQL: DEBUG
